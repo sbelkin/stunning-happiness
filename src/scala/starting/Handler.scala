@@ -1,8 +1,11 @@
 package scala.starting
 
+import javafx.beans.binding.When
+
 /**
   * Created by sbelkin on 2/28/2016.
   */
+
 object Handler {
 
   def main(args: Array[String]) {
@@ -11,7 +14,7 @@ object Handler {
     }
     val source = scala.io.Source.fromFile(args(0))
     val lines = try source.mkString finally source.close()
-    var output = reverse_words(lines)
+    val output = reverse_words(lines)
 
     if(args.length < 2){
       val source = scala.io.Source.fromFile(args(1))
@@ -23,10 +26,17 @@ object Handler {
     }
   }
 
+//  This is not efficient.
+//  def reverse_words_bad(args: String) : String = {
+//    val split = args.split(" ").reverse
+//    var reversed = ""
+//    split.foreach( i => reversed += i + " " )
+//    reversed
+//  }
+
+  //we will now want to swap word locations. to do this size of words will matter and location between each space.
   def reverse_words(args: String) : String = {
-    var split = args.split(" ").reverse
-    var reversed = ""
-    split.foreach( i => reversed += i + " " )
-    reversed
+
+    ""
   }
 }
