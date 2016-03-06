@@ -12,3 +12,6 @@ From the wiki we got the following rules:
     Any live cell with two or three live neighbours lives on to the next generation.
     Any live cell with more than three live neighbours dies, as if by over-population.
     Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+    
+To run need 4 arguments (Example used:   5  5 src/resource/default 3):
+ Rows Columns DefaultFile IterationLifeCount
