@@ -3,7 +3,4 @@ Starting out with scala.
 
 Found a few basic tutorials however, none seemed a good way to start. 
 
-So I am using a question from the website interviewcake.com
-https://www.interviewcake.com/question/python/reverse-words
-
-TODO: Needed to decide how the swapping of different sized works will work. 
+Decided to make Conway's Game of Life.
